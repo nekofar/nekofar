@@ -1,5 +1,12 @@
-### Hi there 👋
+### Hi, I'm Milad 👋
 
+I have around two decades of experience in the software industry. Right now, I work on software development projects as a freelancer.
+
+I learned programming skills on an experimental basis and through self-learning. I quit the study after I got my diploma. I didn't have any interest in academic studies.
+
+I enjoy learning and experiment with new things and self-studies, especially if related to new technologies and software development. I have worked with different platforms, mostly in the field of mobile and web development.
+
+Sometimes I give consultation to the startups or cooperate with them. In recent past years, I dedicated part of my life to help the growth of entrepreneurship and startups ecosystem in my city. I like to work with professionals and learn from them.
 <!--
 **nekofar/nekofar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
