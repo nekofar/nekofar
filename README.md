@@ -1,3 +1,8 @@
+[![Visits Badge](https://badges.pufler.dev/visits/nekofar/nekofar)](https://milad.nekofar.com)
+[![Years Badge](https://badges.pufler.dev/years/nekofar)](https://github.com/nekofar)
+[![Twitter Badge](https://img.shields.io/badge/Twitter-Profile-informational?style=flat&logo=twitter&logoColor=white&color=1CA2F1)](https://twitter.com/nekofar)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/nekofar/)
+
 ### Hi, I'm Milad 👋
 
 I'm a self-taught Software Developer. I have around two decades of experience in the software industry. At the moment, I work on software development projects as a freelancer.
