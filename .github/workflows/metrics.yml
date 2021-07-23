@@ -18,6 +18,7 @@ jobs:
           user: nekofar
           template: classic
           base: activity, community, repositories, metadata
+          repositories: 500
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_display: large
