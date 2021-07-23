@@ -11,6 +11,8 @@ I enjoy learning and experiment with new things and self-studies, especially if 
 
 Sometimes I give consultation to the startups or cooperate with them. In recent past years, I dedicated part of my life to help the growth of entrepreneurship and startups ecosystem in my city. I like to work with professionals and learn from them. 
 
+![Metrics](https://github.com/nekofar/nekofar/blob/master/github-metrics.svg)
+
 <!--
 **nekofar/nekofar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
