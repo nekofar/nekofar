@@ -22,6 +22,7 @@ jobs:
           repositories_affiliations: owner, collaborator
           config_display: large
           config_timezone: Asia/Tehran
+          use_prebuilt_image: yes
           plugin_languages: yes
           plugin_languages_ignored: actionscript, makefile
           plugin_languages_colors: github
