@@ -19,7 +19,7 @@ jobs:
           template: classic
           base: activity, community, repositories, metadata
           repositories_forks: yes
-          repositories_affiliations: owner, collaborator
+          repositories_affiliations: owner, collaborator, organization_member
           config_display: large
           config_timezone: Asia/Tehran
           use_prebuilt_image: no
