@@ -26,7 +26,6 @@ jobs:
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
           
           plugin_languages: yes
-          plugin_languages_ignored: actionscript, makefile, c, batchfile
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent.days: 14
@@ -44,6 +43,6 @@ jobs:
           plugin_wakatime_url: https://wakatime.com/@nekofar
           plugin_wakatime_user: current
           
-          plugin_achievements: yes
+          plugin_achievements: no
           plugin_achievements_threshold: B
           
