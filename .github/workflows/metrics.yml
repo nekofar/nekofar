@@ -44,7 +44,7 @@ jobs:
           filename: assets/repositories.svg
           use_prebuilt_image: yes
           plugin_lines: yes
-     - name: plugin languages
+     - name: plugin wakatime
        uses: lowlighter/metrics@latest
        with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -53,16 +53,15 @@ jobs:
           repositories_forks: yes           
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/languages.svg
+          filename: assets/wakatime.svg
           use_prebuilt_image: yes
-          plugin_languages: yes
-          plugin_languages_ignored: html, css 
-          #plugin_languages_details: bytes-size, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_colors: github
-          plugin_languages_details: lines, percentage
-          plugin_languages_threshold: 0%
-          plugin_languages_indepth: true
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}      # Required
+          plugin_wakatime_days: 7                                   # Display last week stats
+          plugin_wakatime_sections: time, projects, projects-graphs # Display time and projects sections, along with projects graphs
+          plugin_wakatime_limit: 4                                  # Show 4 entries per graph
+          plugin_wakatime_url: https://wakatime.com                 # Wakatime url endpoint
+          plugin_wakatime_user: .user.login                         # User
      - name: plugin reactions
        uses: lowlighter/metrics@latest
        with:
@@ -150,3 +149,21 @@ jobs:
           plugin_posts: yes
           plugin_posts_source: dev.to
           plugin_people_user: .github.user
+     - name: plugin languages
+       uses: lowlighter/metrics@latest
+       with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 300                
+          repositories_forks: yes           
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/languages.svg
+          use_prebuilt_image: yes
+          plugin_languages: yes
+          plugin_languages_ignored: html, css 
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_colors: github
+          plugin_languages_threshold: 0%
+          plugin_languages_indepth: true
