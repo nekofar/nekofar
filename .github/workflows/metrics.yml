@@ -154,6 +154,42 @@ jobs:
           plugin_posts: yes
           plugin_posts_source: dev.to      # External source
           plugin_people_user: .github.user # Use same username as GitHub login
+     - name: plugin support
+       uses: lowlighter/metrics@latest
+       with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 300                
+          repositories_forks: yes           
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/support.svg
+          use_prebuilt_image: yes
+          plugin_support: yes
+     - name: plugin traffic
+       uses: lowlighter/metrics@latest
+       with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 300                
+          repositories_forks: yes           
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/traffic.svg
+          use_prebuilt_image: yes
+          plugin_traffic: yes
+     - name: plugin lines
+       uses: lowlighter/metrics@latest
+       with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 300                
+          repositories_forks: yes           
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/lines.svg
+          use_prebuilt_image: yes
+          plugin_lines: yes
      - name: plugin habits
        uses: lowlighter/metrics@latest
        with:
