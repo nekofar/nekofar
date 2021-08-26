@@ -74,9 +74,11 @@ jobs:
           filename: assets/reactions.svg
           use_prebuilt_image: yes
           plugin_reactions: yes
-          plugin_reactions_limit: 200
-          plugin_reactions_days: 30
-          plugin_reactions_details: count, percentage
+          plugin_reactions_limit: 200                 # Compute reactions over last 200 issue comments
+          plugin_reactions_limit_issues: 100          # Compute reactions over laste 100 issues/pull requests opened
+          plugin_reactions_days: 30                   # Compute reactions on issue comments posted less than 14 days ago
+          plugin_reactions_details: count, percentage # Display reactions count and percentage
+          plugin_reactions_ignored: bot               # Ignore "bot" user
      - name: plugin topics
        uses: lowlighter/metrics@latest
        with:
@@ -89,9 +91,9 @@ jobs:
           filename: assets/topics.svg
           use_prebuilt_image: yes
           plugin_topics: yes
-          plugin_topics_sort: stars
-          plugin_topics_mode: mastered
-          plugin_topics_limit: 20
+          plugin_topics_sort: stars    # Sort by most starred topics
+          plugin_topics_mode: mastered # Display icons instead of labels
+          plugin_topics_limit: 20      # Disable limitations
      - name: plugin achievements
        uses: lowlighter/metrics@latest
        with:
@@ -104,9 +106,11 @@ jobs:
           filename: assets/achievements.svg
           use_prebuilt_image: yes
           plugin_achievements: yes
-          plugin_achievements_threshold: B
-          plugin_achievements_secrets: yes
-          plugin_achievements_limit: 0
+          plugin_achievements_threshold: B       # Display achievements with rank B or higher
+          plugin_achievements_secrets: yes       # Display unlocked secrets achievements
+          plugin_achievements_ignored: octonaut  # Hide octonaut achievement
+          plugin_achievements_limit: 0           # Display all unlocked achievement matching threshold and secrets params
+          plugin_achievements_display: detailed  # Use compact display
      - name: plugin followup
        uses: lowlighter/metrics@latest
        with:
@@ -119,6 +123,7 @@ jobs:
           filename: assets/followup.svg
           use_prebuilt_image: yes
           plugin_followup: yes
+          plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
      - name: plugin stackoverflow
        uses: lowlighter/metrics@latest
        with:
@@ -131,10 +136,10 @@ jobs:
           filename: assets/stackoverflow.svg
           use_prebuilt_image: yes
           plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 184605                           
-          plugin_stackoverflow_sections: ""
-          plugin_stackoverflow_limit: 2                                
-          plugin_stackoverflow_lines: 4  
+          plugin_stackoverflow_user: 184605                            # Stackoverflow user id (required)
+          plugin_stackoverflow_sections: ""                            # Display top answers and recent questions
+          plugin_stackoverflow_limit: 2                                # Display 2 entries per section
+          plugin_stackoverflow_lines: 4                                # Display 4 lines per entry
      - name: plugin posts
        uses: lowlighter/metrics@latest
        with:
@@ -147,8 +152,8 @@ jobs:
           filename: assets/posts.svg
           use_prebuilt_image: yes                             
           plugin_posts: yes
-          plugin_posts_source: dev.to
-          plugin_people_user: .github.user
+          plugin_posts_source: dev.to      # External source
+          plugin_people_user: .github.user # Use same username as GitHub login
      - name: plugin languages
        uses: lowlighter/metrics@latest
        with:
@@ -161,9 +166,17 @@ jobs:
           filename: assets/languages.svg
           use_prebuilt_image: yes
           plugin_languages: yes
-          plugin_languages_ignored: html, css 
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_colors: github
-          plugin_languages_threshold: 0%
-          plugin_languages_indepth: true
+          plugin_languages_ignored: html, css                           # List of languages to ignore
+          plugin_languages_skipped: ""                                  # List of repositories to skip
+          plugin_languages_colors: github                               # Make most used languages orange and JavaScript red
+          plugin_languages_aliases: ""                                  # Customize languages names with aliases
+          plugin_languages_details: bytes-size, percentage              # Additionally display total bytes size and percentage
+          plugin_languages_threshold: 2%                                # Hides all languages less than 2%
+          plugin_languages_limit: 8                                     # Display up to 8 languages
+          plugin_languages_sections: most-used, recently-used           # Display most used and recently used languages stats
+          plugin_languages_indepth: no                                  # Get indepth stats (see documentation before enabling)
+          plugin_languages_categories: programming                      # Display only languages that match these categories in most-used section
+          plugin_languages_recent_categories: markup, programming, data # Display only languages that match these categories in recently-used section
+          plugin_languages_recent_load: 500                             # Load up to 500 events to compute recently used stats
+          plugin_languages_recent_days: 7                               # Limit recently used stats to last week
+          commits_authoring: nekofar@users.noreply.github.com           # Surnames or email addresses used to identify your commits
