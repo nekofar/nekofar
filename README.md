@@ -22,10 +22,11 @@ Sometimes I give consultation to the startups or cooperate with them. In recent 
         <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/topics.svg" -->
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/followup.svg">
         <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/reactions.svg" -->
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/wakatime.svg">
       </td>
       <td width="50%" style="border: none; vertical-align: top;">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/activity-community.svg">
-        <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/stackoverflow.svg" -->
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/stackoverflow.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/achievements.svg">
       </td>
     </tr>
