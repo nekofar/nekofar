@@ -232,4 +232,4 @@ jobs:
           plugin_languages_recent_categories: markup, programming, data # Display only languages that match these categories in recently-used section
           plugin_languages_recent_load: 1000                            # Load up to 1000 events to compute recently used stats
           plugin_languages_recent_days: 14                              # Limit recently used stats to last week
-          commits_authoring: nekofar@gmail.com, milad@nekofar.com       # Surnames or email addresses used to identify your commits
+          commits_authoring: ${{ secrets.AUTHOR_EMAILS }}               # Surnames or email addresses used to identify your commits
