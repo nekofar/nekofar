@@ -11,19 +11,24 @@ I enjoy learning and experiment with new things and self-studies, especially if 
 
 Sometimes I give consultation to the startups or cooperate with them. In recent past years, I dedicated part of my life to help the growth of entrepreneurship and startups ecosystem in my city. I like to work with professionals and learn from them. 
 
-![Metrics](https://github.com/nekofar/nekofar/blob/master/github-metrics.svg)
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;">
+  <tbody>
+    <tr style="border: none;">
+      <td width="50%" style="border: none; vertical-align: top;">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/header.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/repositories.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/posts.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/languages.svg">
+        <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/topics.svg" -->
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/followup.svg">
+        <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/reactions.svg" -->
+      </td>
+      <td width="50%" style="border: none; vertical-align: top;">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/activity-community.svg">
+        <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/stackoverflow.svg" -->
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/achievements.svg">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<!--
-**nekofar/nekofar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
