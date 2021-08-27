@@ -243,7 +243,7 @@ jobs:
           plugin_languages_sections: most-used, recently-used                     # Display most used and recently used languages stats
           plugin_languages_indepth: yes                                           # Get indepth stats (see documentation before enabling)
           plugin_languages_categories: programming                                # Display only languages that match these categories in most-used section
-          plugin_languages_recent_categories: markup, programming, data, prose    # Display only languages that match these categories in recently-used section
+          plugin_languages_recent_categories: markup, programming                 # Display only languages that match these categories in recently-used section
           plugin_languages_recent_load: 1000                                      # Load up to 1000 events to compute recently used stats
-          plugin_languages_recent_days: 14                                        # Limit recently used stats to last week
+          plugin_languages_recent_days: 30                                        # Limit recently used stats to last week
           commits_authoring: ${{ secrets.AUTHOR_EMAILS }}                         # Surnames or email addresses used to identify your commits
