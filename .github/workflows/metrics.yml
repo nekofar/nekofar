@@ -1,14 +1,17 @@
 name: Metrics
+
 on:
   # Schedule updates (each hour)
   schedule: [{cron: "0 0 * * 6"}]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  # push: {branches: ["master", "main"]}
+  push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+     
      - name: header
        uses: lowlighter/metrics@latest
        with:
@@ -21,6 +24,7 @@ jobs:
           filename: assets/header.svg
           use_prebuilt_image: yes
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
+     
      - name: activity & community
        uses: lowlighter/metrics@latest
        with:
@@ -33,6 +37,7 @@ jobs:
           filename: assets/activity-community.svg
           use_prebuilt_image: yes
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
+     
      - name: repositories
        uses: lowlighter/metrics@latest
        with:
@@ -46,6 +51,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
           plugin_lines: yes
+     
      - name: plugin wakatime
        uses: lowlighter/metrics@latest
        with:
@@ -65,6 +71,7 @@ jobs:
           plugin_wakatime_limit: 5                                                        # Show 5 entries per graph
           plugin_wakatime_url: https://wakatime.com                                       # Wakatime url endpoint
           plugin_wakatime_user: .user.login                                               # User
+     
      - name: plugin reactions
        uses: lowlighter/metrics@latest
        with:
@@ -83,6 +90,7 @@ jobs:
           plugin_reactions_days: 30                   # Compute reactions on issue comments posted less than 14 days ago
           plugin_reactions_details: count, percentage # Display reactions count and percentage
           plugin_reactions_ignored: bot               # Ignore "bot" user
+     
      - name: plugin topics
        uses: lowlighter/metrics@latest
        with:
@@ -99,6 +107,7 @@ jobs:
           plugin_topics_sort: stars    # Sort by most starred topics
           plugin_topics_mode: mastered # Display icons instead of labels
           plugin_topics_limit: 20      # Disable limitations
+     
      - name: plugin achievements
        uses: lowlighter/metrics@latest
        with:
@@ -117,6 +126,7 @@ jobs:
           plugin_achievements_ignored: octonaut  # Hide octonaut achievement
           plugin_achievements_limit: 0           # Display all unlocked achievement matching threshold and secrets params
           plugin_achievements_display: detailed  # Use compact display
+     
      - name: plugin followup
        uses: lowlighter/metrics@latest
        with:
@@ -131,6 +141,7 @@ jobs:
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
           plugin_followup: yes
           plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
+     
      - name: plugin stackoverflow
        uses: lowlighter/metrics@latest
        with:
@@ -148,6 +159,7 @@ jobs:
           plugin_stackoverflow_sections: ""                            # Display top answers and recent questions
           plugin_stackoverflow_limit: 2                                # Display 2 entries per section
           plugin_stackoverflow_lines: 4                                # Display 4 lines per entry
+     
      - name: plugin posts
        uses: lowlighter/metrics@latest
        with:
@@ -163,6 +175,7 @@ jobs:
           plugin_posts: yes
           plugin_posts_source: dev.to      # External source
           plugin_people_user: .github.user # Use same username as GitHub login
+     
      - name: plugin support
        uses: lowlighter/metrics@latest
        with:
@@ -176,6 +189,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
           plugin_support: yes
+     
      - name: plugin traffic
        uses: lowlighter/metrics@latest
        with:
@@ -189,6 +203,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
           plugin_traffic: yes
+     
      - name: plugin lines
        uses: lowlighter/metrics@latest
        with:
@@ -202,6 +217,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: 'chore(metrics): update ${filename} - [Skip GitHub Action]'
           plugin_lines: yes
+     
      - name: plugin habits
        uses: lowlighter/metrics@latest
        with:
@@ -220,6 +236,7 @@ jobs:
           plugin_habits_facts: yes      # Display facts section
           plugin_habits_charts: no      # Display charts section
           plugin_habits_trim: yes       # Trim unused hours on daily chart
+     
      - name: plugin languages
        uses: lowlighter/metrics@latest
        with:
