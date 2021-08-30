@@ -254,7 +254,7 @@ jobs:
           plugin_languages_skipped: ""                                            # List of repositories to skip
           plugin_languages_colors: github                                         # Make most used languages orange and JavaScript red
           plugin_languages_aliases: ""                                            # Customize languages names with aliases
-          plugin_languages_details: bytes-size, lines                             # Additionally display total bytes size and percentage
+          plugin_languages_details: percentage, lines                             # Additionally display total bytes size and percentage
           plugin_languages_threshold: 0%                                          # Hides all languages less than 2%
           plugin_languages_limit: 8                                               # Display up to 8 languages
           plugin_languages_sections: most-used, recently-used                     # Display most used and recently used languages stats
