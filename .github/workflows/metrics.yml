@@ -264,7 +264,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_languages: yes
-          plugin_languages_ignored: html, css, svg # List of languages to ignore
+          plugin_languages_ignored: html, css, svg, text # List of languages to ignore
           plugin_languages_skipped: "" # List of repositories to skip
           plugin_languages_colors: github # Make most used languages orange and JavaScript red
           plugin_languages_aliases: "" # Customize languages names with aliases
