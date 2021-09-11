@@ -115,7 +115,7 @@ jobs:
   # 📌 Starred topics
   plugin-topics:
     name: Topics
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: plugin topics
         uses: lowlighter/metrics@latest
@@ -160,7 +160,7 @@ jobs:
 
   # 🎟️  Follow-up of issues and pull requests
   plugin-followup:
-    name: Followup
+    name: Followup issues
     runs-on: ubuntu-latest
     steps:
       - name: plugin followup
