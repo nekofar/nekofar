@@ -61,7 +61,6 @@ jobs:
           filename: assets/repositories.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
-          plugin_lines: yes
 
   # ⏰ WakaTime plugin
   plugin-wakatime:
@@ -114,7 +113,7 @@ jobs:
 
   # 📌 Starred topics
   plugin-topics:
-    name: Topics
+    name: Starred topics
     runs-on: ubuntu-latest
     steps:
       - name: plugin topics
@@ -203,7 +202,7 @@ jobs:
 
   # ✒️  Recent posts
   plugin-posts:
-    name: Posts
+    name: Recent posts
     runs-on: ubuntu-latest
     steps:
       - name: plugin posts
@@ -224,7 +223,7 @@ jobs:
 
   # 💭 GitHub Community Support
   plugin-support:
-    name: Support
+    name: Community Support
     runs-on: ubuntu-latest
     steps:
       - name: plugin support
