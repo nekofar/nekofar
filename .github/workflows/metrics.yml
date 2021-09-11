@@ -8,10 +8,11 @@ on:
   push: { branches: ["master", "main"] }
 
 jobs:
-  github-metrics:
+  # 🗃️  Base content: Header
+  header:
+    name: Header
     runs-on: ubuntu-latest
     steps:
-      # 🗃️  Base content
       - name: header
         uses: lowlighter/metrics@latest
         with:
@@ -25,7 +26,11 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
-      # 🗃️  Base content
+  # 🗃️  Base content: Activity & Community
+  activity-community:
+    name: Activity & Community
+    runs-on: ubuntu-latest
+    steps:
       - name: activity & community
         uses: lowlighter/metrics@latest
         with:
@@ -39,7 +44,11 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
-      # 🗃️  Base content
+  # 🗃️  Base content: Repositories
+  repositories:
+    name: Repositories
+    runs-on: ubuntu-latest
+    steps:
       - name: repositories
         uses: lowlighter/metrics@latest
         with:
@@ -54,7 +63,11 @@ jobs:
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_lines: yes
 
-      # ⏰ WakaTime plugin
+  # ⏰ WakaTime plugin
+  plugin-wakatime:
+    name: WakaTime
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin wakatime
         uses: lowlighter/metrics@latest
         with:
@@ -75,7 +88,11 @@ jobs:
           plugin_wakatime_url: https://wakatime.com # Wakatime url endpoint
           plugin_wakatime_user: .user.login # User
 
-      # 🎭 Comment reactions
+  # 🎭 Comment reactions
+  plugin-reactions:
+    name: Comment reactions
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin reactions
         uses: lowlighter/metrics@latest
         with:
@@ -95,7 +112,11 @@ jobs:
           plugin_reactions_details: count, percentage # Display reactions count and percentage
           plugin_reactions_ignored: bot # Ignore "bot" user
 
-      # 📌 Starred topics
+  # 📌 Starred topics
+  plugin-topics:
+    name: Topics
+    run-on: ubuntu-latest
+    steps:
       - name: plugin topics
         uses: lowlighter/metrics@latest
         with:
@@ -113,7 +134,11 @@ jobs:
           plugin_topics_mode: mastered # Display icons instead of labels
           plugin_topics_limit: 20 # Disable limitations
 
-      # 🏆 Achievements
+  # 🏆 Achievements
+  plugin-achivements:
+    name: Achievements
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin achievements
         uses: lowlighter/metrics@latest
         with:
@@ -133,7 +158,11 @@ jobs:
           plugin_achievements_limit: 0 # Display all unlocked achievement matching threshold and secrets params
           plugin_achievements_display: detailed # Use compact display
 
-      # 🎟️  Follow-up of issues and pull requests
+  # 🎟️  Follow-up of issues and pull requests
+  plugin-followup:
+    name: Followup
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin followup
         uses: lowlighter/metrics@latest
         with:
@@ -149,7 +178,11 @@ jobs:
           plugin_followup: yes
           plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
 
-      # 🗨️  Stackoverflow plugin
+  # 🗨️  Stackoverflow plugin
+  plugin-stackoverflow:
+    name: Stackoverflow
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin stackoverflow
         uses: lowlighter/metrics@latest
         with:
@@ -168,7 +201,11 @@ jobs:
           plugin_stackoverflow_limit: 2 # Display 2 entries per section
           plugin_stackoverflow_lines: 4 # Display 4 lines per entry
 
-      # ✒️  Recent posts
+  # ✒️  Recent posts
+  plugin-posts:
+    name: Posts
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin posts
         uses: lowlighter/metrics@latest
         with:
@@ -185,7 +222,11 @@ jobs:
           plugin_posts_source: dev.to # External source
           plugin_people_user: .github.user # Use same username as GitHub login
 
-      # 💭 GitHub Community Support
+  # 💭 GitHub Community Support
+  plugin-support:
+    name: Support
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin support
         uses: lowlighter/metrics@latest
         with:
@@ -200,7 +241,11 @@ jobs:
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_support: yes
 
-      # 🧮 Repositories traffic
+  # 🧮 Repositories traffic
+  plugin-traffic:
+    name: Repositories Traffic
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin traffic
         uses: lowlighter/metrics@latest
         with:
@@ -215,7 +260,11 @@ jobs:
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_traffic: yes
 
-      # 👨‍💻 Lines of code changed
+  # 👨‍💻 Lines of code changed
+  plugin-lines:
+    name: Lines of codes changed
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin lines
         uses: lowlighter/metrics@latest
         with:
@@ -230,7 +279,11 @@ jobs:
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_lines: yes
 
-      # 💡 Coding habits
+  # 💡 Coding habits
+  plugin-habits:
+    name: Coding habits
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin habits
         uses: lowlighter/metrics@latest
         with:
@@ -250,7 +303,11 @@ jobs:
           plugin_habits_charts: no # Display charts section
           plugin_habits_trim: yes # Trim unused hours on daily chart
 
-      # 🈷️ Most used languages
+  # 🈷️ Most used languages
+  plugin-languages:
+    name: Most used languages
+    runs-on: ubuntu-latest
+    steps:
       - name: plugin languages
         uses: lowlighter/metrics@latest
         with:
