@@ -11,20 +11,19 @@ I enjoy learning and experiment with new things and self-studies, especially if 
 
 Sometimes I give consultation to the startups or cooperate with them. In recent past years, I dedicated part of my life to help the growth of entrepreneurship and startups ecosystem in my city. I like to work with professionals and learn from them. 
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;">
+<table cellspacing="0" cellpadding="0">
   <tbody>
-    <tr style="border: none;">
-      <td width="50%" style="border: none; vertical-align: top;">
+    <tr>
+      <td width="50%" valign="top">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.header.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.repositories.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.posts.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.stackoverflow.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.languages.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.languages.recent.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.followup.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.reactions.svg">
       </td>
-      <td width="50%" style="border: none; vertical-align: top;">
+      <td width="50%" valign="top">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.activity-community.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.wakatime.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.achievements.svg">

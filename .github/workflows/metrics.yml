@@ -2,7 +2,7 @@ name: Metrics
 
 on:
   # Schedule updates (each hour)
-  schedule: [{ cron: "30 20 * * 0" }]
+  schedule: [{ cron: "30 20 * * 5" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: { branches: ["master", "main"] }
@@ -22,7 +22,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/metrics.header.svg
+          filename: assets/metrics.base.header.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -346,35 +346,7 @@ jobs:
           plugin_languages_details: percentage, lines # Additionally display total bytes size and percentage
           plugin_languages_threshold: 0% # Hides all languages less than 2%
           plugin_languages_limit: 8 # Display up to 8 languages
-          plugin_languages_sections: most-used # Display most used and recently used languages stats
-          plugin_languages_indepth: yes # Get indepth stats (see documentation before enabling)
-          plugin_languages_categories: programming # Display only languages that match these categories in most-used section
-          plugin_languages_recent_categories: markup, programming, data, prose # Display only languages that match these categories in recently-used section
-          plugin_languages_recent_load: 1000 # Load up to 1000 events to compute recently used stats
-          plugin_languages_recent_days: 30 # Limit recently used stats to last week
-          commits_authoring: ${{ secrets.AUTHOR_EMAILS }} # Surnames or email addresses used to identify your commits
-
-      - name: plugin languages recent
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          repositories: 300
-          repositories_forks: yes
-          repositories_affiliations: owner, collaborator, organization_member
-          config_timezone: Asia/Tehran
-          filename: assets/metrics.plugin.languages.recent.svg
-          use_prebuilt_image: yes
-          committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, svg, text # List of languages to ignore
-          plugin_languages_skipped: "" # List of repositories to skip
-          plugin_languages_colors: github # Make most used languages orange and JavaScript red
-          plugin_languages_aliases: "" # Customize languages names with aliases
-          plugin_languages_details: percentage, lines # Additionally display total bytes size and percentage
-          plugin_languages_threshold: 0% # Hides all languages less than 2%
-          plugin_languages_limit: 8 # Display up to 8 languages
-          plugin_languages_sections: recently-used # Display most used and recently used languages stats
+          plugin_languages_sections: most-used, recently-used # Display most used and recently used languages stats
           plugin_languages_indepth: yes # Get indepth stats (see documentation before enabling)
           plugin_languages_categories: programming # Display only languages that match these categories in most-used section
           plugin_languages_recent_categories: markup, programming, data, prose # Display only languages that match these categories in recently-used section
