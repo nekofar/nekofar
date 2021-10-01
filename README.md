@@ -15,18 +15,17 @@ Sometimes I give consultation to the startups or cooperate with them. In recent 
   <tbody>
     <tr style="border: none;">
       <td width="50%" style="border: none; vertical-align: top;">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.header.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.repositories.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.posts.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.stackoverflow.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.languages.svg">
-        <!-- img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.topics.svg" -->
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.followup.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.reactions.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.header.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.repositories.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.posts.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.stackoverflow.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.languages.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.followup.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.reactions.svg">
       </td>
       <td width="50%" style="border: none; vertical-align: top;">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.activity-community.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.wakatime.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.activity-community.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.wakatime.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.achievements.svg">
       </td>
     </tr>
