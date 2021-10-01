@@ -27,7 +27,7 @@ Sometimes I give consultation to the startups or cooperate with them. In recent 
       <td width="50%" style="border: none; vertical-align: top;">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.activity-community.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.wakatime.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.achievements.svg">
+        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.achievements.svg">
       </td>
     </tr>
   </tbody>
