@@ -22,7 +22,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/metrics.header.svg
+          filename: assets/metrics.base.header.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
