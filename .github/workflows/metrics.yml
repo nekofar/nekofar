@@ -22,7 +22,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/header.svg
+          filename: assets/metrics.header.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -40,7 +40,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/activity-community.svg
+          filename: assets/metrics.base.activity-community.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -58,7 +58,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/repositories.svg
+          filename: assets/metrics.base.repositories.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -76,7 +76,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/wakatime.svg
+          filename: assets/metrics.plugin.wakatime.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_wakatime: yes
@@ -101,7 +101,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/reactions.svg
+          filename: assets/metrics.plugin.reactions.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_reactions: yes
@@ -125,7 +125,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/topics.svg
+          filename: assets/metrics.plugin.topics.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_topics: yes
@@ -147,7 +147,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/achievements.svg
+          filename: assets/metrics.plugin.achievements.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_achievements: yes
@@ -156,6 +156,25 @@ jobs:
           plugin_achievements_ignored: octonaut # Hide octonaut achievement
           plugin_achievements_limit: 0 # Display all unlocked achievement matching threshold and secrets params
           plugin_achievements_display: detailed # Use compact display
+
+      - name: plugin achievements compact
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 300
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/metrics.plugin.achievements.compact.svg
+          use_prebuilt_image: yes
+          committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
+          plugin_achievements: yes
+          plugin_achievements_threshold: B # Display achievements with rank B or higher
+          plugin_achievements_secrets: yes # Display unlocked secrets achievements
+          plugin_achievements_ignored: octonaut # Hide octonaut achievement
+          plugin_achievements_limit: 0 # Display all unlocked achievement matching threshold and secrets params
+          plugin_achievements_display: compact # Use compact display
 
   # 🎟️  Follow-up of issues and pull requests
   plugin-followup:
@@ -171,7 +190,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/followup.svg
+          filename: assets/metrics.plugin.followup.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_followup: yes
@@ -191,7 +210,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/stackoverflow.svg
+          filename: assets/metrics.plugin.stackoverflow.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_stackoverflow: yes
@@ -214,7 +233,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/posts.svg
+          filename: assets/metrics.plugin.posts.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_posts: yes
@@ -235,7 +254,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/support.svg
+          filename: assets/metrics.plugin.support.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_support: yes
@@ -254,7 +273,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/traffic.svg
+          filename: assets/metrics.plugin.traffic.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_traffic: yes
@@ -273,7 +292,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/lines.svg
+          filename: assets/metrics.plugin.lines.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_lines: yes
@@ -292,7 +311,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/habits.svg
+          filename: assets/metrics.plugin.habits.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_habits: yes
@@ -316,7 +335,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/languages.svg
+          filename: assets/metrics.plugin.languages.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_languages: yes
@@ -327,7 +346,35 @@ jobs:
           plugin_languages_details: percentage, lines # Additionally display total bytes size and percentage
           plugin_languages_threshold: 0% # Hides all languages less than 2%
           plugin_languages_limit: 8 # Display up to 8 languages
-          plugin_languages_sections: most-used, recently-used # Display most used and recently used languages stats
+          plugin_languages_sections: most-used # Display most used and recently used languages stats
+          plugin_languages_indepth: yes # Get indepth stats (see documentation before enabling)
+          plugin_languages_categories: programming # Display only languages that match these categories in most-used section
+          plugin_languages_recent_categories: markup, programming, data, prose # Display only languages that match these categories in recently-used section
+          plugin_languages_recent_load: 1000 # Load up to 1000 events to compute recently used stats
+          plugin_languages_recent_days: 30 # Limit recently used stats to last week
+          commits_authoring: ${{ secrets.AUTHOR_EMAILS }} # Surnames or email addresses used to identify your commits
+
+      - name: plugin languages recent
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 300
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/metrics.plugin.languages.recent.svg
+          use_prebuilt_image: yes
+          committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, svg, text # List of languages to ignore
+          plugin_languages_skipped: "" # List of repositories to skip
+          plugin_languages_colors: github # Make most used languages orange and JavaScript red
+          plugin_languages_aliases: "" # Customize languages names with aliases
+          plugin_languages_details: percentage, lines # Additionally display total bytes size and percentage
+          plugin_languages_threshold: 0% # Hides all languages less than 2%
+          plugin_languages_limit: 8 # Display up to 8 languages
+          plugin_languages_sections: recently-used # Display most used and recently used languages stats
           plugin_languages_indepth: yes # Get indepth stats (see documentation before enabling)
           plugin_languages_categories: programming # Display only languages that match these categories in most-used section
           plugin_languages_recent_categories: markup, programming, data, prose # Display only languages that match these categories in recently-used section
