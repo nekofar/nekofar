@@ -25,6 +25,7 @@ jobs:
           filename: assets/header.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
+          config_display: columns
 
   # 🗃️  Base content: Activity & Community
   activity-community:
@@ -43,6 +44,7 @@ jobs:
           filename: assets/activity-community.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
+          config_display: columns
 
   # 🗃️  Base content: Repositories
   repositories:
@@ -61,6 +63,7 @@ jobs:
           filename: assets/repositories.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
+          config_display: columns
 
   # ⏰ WakaTime plugin
   plugin-wakatime:
@@ -86,6 +89,7 @@ jobs:
           plugin_wakatime_limit: 5 # Show 5 entries per graph
           plugin_wakatime_url: https://wakatime.com # Wakatime url endpoint
           plugin_wakatime_user: .user.login # User
+          config_display: columns
 
   # 🎭 Comment reactions
   plugin-reactions:
@@ -110,6 +114,7 @@ jobs:
           plugin_reactions_days: 30 # Compute reactions on issue comments posted less than 14 days ago
           plugin_reactions_details: count, percentage # Display reactions count and percentage
           plugin_reactions_ignored: bot # Ignore "bot" user
+          config_display: columns
 
   # 📌 Starred topics
   plugin-topics:
@@ -132,6 +137,7 @@ jobs:
           plugin_topics_sort: stars # Sort by most starred topics
           plugin_topics_mode: mastered # Display icons instead of labels
           plugin_topics_limit: 20 # Disable limitations
+          config_display: columns
 
   # 🏆 Achievements
   plugin-achivements:
@@ -156,6 +162,7 @@ jobs:
           plugin_achievements_ignored: octonaut # Hide octonaut achievement
           plugin_achievements_limit: 0 # Display all unlocked achievement matching threshold and secrets params
           plugin_achievements_display: detailed # Use compact display
+          config_display: columns
 
   # 🎟️  Follow-up of issues and pull requests
   plugin-followup:
@@ -176,6 +183,7 @@ jobs:
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_followup: yes
           plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
+          config_display: columns
 
   # 🗨️  Stackoverflow plugin
   plugin-stackoverflow:
@@ -199,6 +207,7 @@ jobs:
           plugin_stackoverflow_sections: "" # Display top answers and recent questions
           plugin_stackoverflow_limit: 2 # Display 2 entries per section
           plugin_stackoverflow_lines: 4 # Display 4 lines per entry
+          config_display: columns
 
   # ✒️  Recent posts
   plugin-posts:
@@ -220,6 +229,7 @@ jobs:
           plugin_posts: yes
           plugin_posts_source: dev.to # External source
           plugin_people_user: .github.user # Use same username as GitHub login
+          config_display: columns
 
   # 💭 GitHub Community Support
   plugin-support:
@@ -239,6 +249,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_support: yes
+          config_display: columns
 
   # 🧮 Repositories traffic
   plugin-traffic:
@@ -258,6 +269,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_traffic: yes
+          config_display: columns
 
   # 👨‍💻 Lines of code changed
   plugin-lines:
@@ -277,6 +289,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_lines: yes
+          config_display: columns
 
   # 💡 Coding habits
   plugin-habits:
@@ -301,6 +314,7 @@ jobs:
           plugin_habits_facts: yes # Display facts section
           plugin_habits_charts: no # Display charts section
           plugin_habits_trim: yes # Trim unused hours on daily chart
+          config_display: columns
 
   # 🈷️ Most used languages
   plugin-languages:
@@ -334,3 +348,4 @@ jobs:
           plugin_languages_recent_load: 1000 # Load up to 1000 events to compute recently used stats
           plugin_languages_recent_days: 30 # Limit recently used stats to last week
           commits_authoring: ${{ secrets.AUTHOR_EMAILS }} # Surnames or email addresses used to identify your commits
+          config_display: columns
