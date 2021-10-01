@@ -22,7 +22,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/header.svg
+          filename: assets/metrics.header.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -40,7 +40,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/activity-community.svg
+          filename: assets/metrics.activity-community.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -58,7 +58,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/repositories.svg
+          filename: assets/metrics.repositories.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
 
@@ -76,7 +76,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/wakatime.svg
+          filename: assets/metrics.wakatime.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_wakatime: yes
@@ -101,7 +101,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/reactions.svg
+          filename: assets/metrics.reactions.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_reactions: yes
@@ -125,7 +125,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/topics.svg
+          filename: assets/metrics.topics.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_topics: yes
@@ -147,7 +147,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/achievements.svg
+          filename: assets/metrics.achievements.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_achievements: yes
@@ -171,7 +171,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/followup.svg
+          filename: assets/metrics.followup.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_followup: yes
@@ -191,7 +191,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/stackoverflow.svg
+          filename: assets/metrics.stackoverflow.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_stackoverflow: yes
@@ -214,7 +214,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/posts.svg
+          filename: assets/metrics.posts.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_posts: yes
@@ -235,7 +235,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/support.svg
+          filename: assets/metrics.support.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_support: yes
@@ -254,7 +254,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/traffic.svg
+          filename: assets/metrics.traffic.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_traffic: yes
@@ -273,7 +273,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/lines.svg
+          filename: assets/metrics.lines.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_lines: yes
@@ -292,7 +292,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/habits.svg
+          filename: assets/metrics.habits.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_habits: yes
@@ -316,7 +316,7 @@ jobs:
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
-          filename: assets/languages.svg
+          filename: assets/metrics.languages.svg
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_languages: yes
