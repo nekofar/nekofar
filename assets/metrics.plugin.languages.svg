@@ -127,18 +127,18 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 89 edited files from 155 commits over last 9 days</small>
+                <small>estimation from 86 edited files from 152 commits over last 9 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="369.4386457661214" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="369.4386457661214" y="0" width="37.031161043002996" height="8" fill="#083fa1"/>
-                    <rect mask="url(#languages-bar)" x="406.46980680912435" y="0" width="34.63923786389342" height="8" fill="#701516"/>
-                    <rect mask="url(#languages-bar)" x="441.1090446730178" y="0" width="10.1962272744525" height="8" fill="#dea584"/>
-                    <rect mask="url(#languages-bar)" x="451.3052719474703" y="0" width="5.883781834743994" height="8" fill="#563d7c"/>
-                    <rect mask="url(#languages-bar)" x="457.1890537822143" y="0" width="2.8109462177857063" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="375.18419033000765" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="375.18419033000765" y="0" width="35.020721412125866" height="8" fill="#701516"/>
+                    <rect mask="url(#languages-bar)" x="410.2049117421335" y="0" width="30.960859554873373" height="8" fill="#083fa1"/>
+                    <rect mask="url(#languages-bar)" x="441.16577129700687" y="0" width="10.308518802762855" height="8" fill="#dea584"/>
+                    <rect mask="url(#languages-bar)" x="451.47429009976975" y="0" width="5.683806600153492" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="457.15809669992325" y="0" width="2.841903300076746" height="8" fill="#e34c26"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -150,18 +150,18 @@
                                 JavaScript
                             </div>
                             <small>
-                                <div>80.31%</div>
+                                <div>81.56%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#701516" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#083fa1" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Ruby
+                                Markdown
                             </div>
                             <small>
-                                <div>7.53%</div>
+                                <div>6.73%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -172,7 +172,7 @@
                                 CSS
                             </div>
                             <small>
-                                <div>1.28%</div>
+                                <div>1.24%</div>
                             </small>
                         </div>
                     </section>
@@ -180,12 +180,12 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#083fa1" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#701516" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Markdown
+                                Ruby
                             </div>
                             <small>
-                                <div>8.05%</div>
+                                <div>7.61%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -196,7 +196,7 @@
                                 Rust
                             </div>
                             <small>
-                                <div>2.22%</div>
+                                <div>2.24%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -207,7 +207,7 @@
                                 HTML
                             </div>
                             <small>
-                                <div>0.61%</div>
+                                <div>0.62%</div>
                             </small>
                         </div>
                     </section>
