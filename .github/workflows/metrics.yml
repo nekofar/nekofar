@@ -339,7 +339,7 @@ jobs:
           use_prebuilt_image: yes
           committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
           plugin_languages: yes
-          plugin_languages_ignored: json, yaml, toml, svg, ini, gerber image # List of languages to ignore
+          plugin_languages_ignored: json, yaml, toml, svg, ini, gerber image, OpenStep Property List # List of languages to ignore
           plugin_languages_skipped: "nekofar/nekofar" # List of repositories to skip
           plugin_languages_colors: github # Make most used languages orange and JavaScript red
           plugin_languages_aliases: "" # Customize languages names with aliases
