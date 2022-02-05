@@ -134,10 +134,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="407.93596986817323" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="407.93596986817323" y="0" width="45.30696798493408" height="8" fill="#701516"/>
-                    <rect mask="url(#languages-bar)" x="453.2429378531073" y="0" width="5.457627118644068" height="8" fill="#427819"/>
-                    <rect mask="url(#languages-bar)" x="458.7005649717514" y="0" width="1.2994350282485876" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="407.9555722891566" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="407.9555722891566" y="0" width="45.28990963855422" height="8" fill="#701516"/>
+                    <rect mask="url(#languages-bar)" x="453.24548192771084" y="0" width="5.455572289156627" height="8" fill="#427819"/>
+                    <rect mask="url(#languages-bar)" x="458.7010542168674" y="0" width="1.2989457831325302" height="8" fill="#563d7c"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -149,7 +149,7 @@
                                 Kotlin
                             </div>
                             <small>
-                                <div>88.68%</div>
+                                <div>88.69%</div>
                             </small>
                         </div>
                         <div class="field language details">
