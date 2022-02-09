@@ -133,9 +133,9 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="433.703113377962" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="433.703113377962" y="0" width="25.563702050791626" height="8" fill="#701516"/>
-                    <rect mask="url(#languages-bar)" x="459.2668154287536" y="0" width="0.7331845712464138" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="433.72544856141843" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="433.72544856141843" y="0" width="25.54198959549846" height="8" fill="#701516"/>
+                    <rect mask="url(#languages-bar)" x="459.26743815691685" y="0" width="0.7325618430831298" height="8" fill="#563d7c"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -147,7 +147,7 @@
                                 Kotlin
                             </div>
                             <small>
-                                <div>94.28%</div>
+                                <div>94.29%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -171,7 +171,7 @@
                                 Ruby
                             </div>
                             <small>
-                                <div>5.56%</div>
+                                <div>5.55%</div>
                             </small>
                         </div>
                     </section>
