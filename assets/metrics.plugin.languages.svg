@@ -128,15 +128,15 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 138 edited files from 123 commits over last 5 days</small>
+                <small>estimation from 115 edited files from 123 commits over last 5 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="454.93226142623195" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="454.93226142623195" y="0" width="4.72532380527021" height="8" fill="#878787"/>
-                    <rect mask="url(#languages-bar)" x="459.6575852315022" y="0" width="0.3424147684978413" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="451.43791397669156" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="451.43791397669156" y="0" width="7.983566697409239" height="8" fill="#878787"/>
+                    <rect mask="url(#languages-bar)" x="459.4214806741008" y="0" width="0.5785193258992203" height="8" fill="#563d7c"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -148,7 +148,7 @@
                                 Kotlin
                             </div>
                             <small>
-                                <div>98.9%</div>
+                                <div>98.14%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -159,7 +159,7 @@
                                 CSS
                             </div>
                             <small>
-                                <div>0.07%</div>
+                                <div>0.13%</div>
                             </small>
                         </div>
                     </section>
@@ -172,7 +172,7 @@
                                 Hack
                             </div>
                             <small>
-                                <div>1.03%</div>
+                                <div>1.74%</div>
                             </small>
                         </div>
                     </section>
