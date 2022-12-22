@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: header
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: activity & community
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: activity, community
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: repositories
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: repositories
@@ -68,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin wakatime
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -93,7 +93,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin reactions
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -117,7 +117,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin topics
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -139,7 +139,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin achievements
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -158,7 +158,7 @@ jobs:
           plugin_achievements_display: detailed # Use compact display
 
       - name: plugin achievements compact
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -182,7 +182,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin followup
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -202,7 +202,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin stackoverflow
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -225,7 +225,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin posts
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -246,7 +246,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin support
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -265,7 +265,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin traffic
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -284,7 +284,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin lines
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -303,7 +303,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin habits
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
@@ -327,7 +327,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin languages
-        uses: lowlighter/metrics@v3.28
+        uses: lowlighter/metrics@v3.31
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
