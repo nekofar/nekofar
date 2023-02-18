@@ -25,7 +25,7 @@ jobs:
           filename: assets/metrics.base.header.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
 
@@ -46,7 +46,7 @@ jobs:
           filename: assets/metrics.base.activity-community.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
 
@@ -67,7 +67,7 @@ jobs:
           filename: assets/metrics.base.repositories.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
 
@@ -88,7 +88,7 @@ jobs:
           filename: assets/metrics.plugin.wakatime.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_wakatime: yes
@@ -116,7 +116,7 @@ jobs:
           filename: assets/metrics.plugin.reactions.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_reactions: yes
@@ -143,7 +143,7 @@ jobs:
           filename: assets/metrics.plugin.topics.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_topics: yes
@@ -168,7 +168,7 @@ jobs:
           filename: assets/metrics.plugin.achievements.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_achievements: yes
@@ -190,7 +190,7 @@ jobs:
           filename: assets/metrics.plugin.achievements.compact.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_achievements: yes
@@ -217,7 +217,7 @@ jobs:
           filename: assets/metrics.plugin.followup.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_followup: yes
@@ -240,7 +240,7 @@ jobs:
           filename: assets/metrics.plugin.stackoverflow.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_stackoverflow: yes
@@ -266,7 +266,7 @@ jobs:
           filename: assets/metrics.plugin.posts.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_posts: yes
@@ -290,7 +290,7 @@ jobs:
           filename: assets/metrics.plugin.support.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_support: yes
@@ -312,7 +312,7 @@ jobs:
           filename: assets/metrics.plugin.traffic.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_traffic: yes
@@ -334,7 +334,7 @@ jobs:
           filename: assets/metrics.plugin.lines.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_lines: yes
@@ -356,7 +356,7 @@ jobs:
           filename: assets/metrics.plugin.habits.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_habits: yes
@@ -383,7 +383,7 @@ jobs:
           filename: assets/metrics.plugin.languages.svg
           use_prebuilt_image: yes
           committer_message: |
-            chore(metrics): update ${filename}
+            chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
           plugin_languages: yes
@@ -400,5 +400,5 @@ jobs:
           plugin_languages_categories: programming # Display only languages that match these categories in most-used section
           plugin_languages_recent_categories: markup, programming # Display only languages that match these categories in recently-used section
           plugin_languages_recent_load: 1000 # Load up to 1000 events to compute recently used stats
-          plugin_languages_recent_days: 30 # Events maximum age (day, recently-used section) 
+          plugin_languages_recent_days: 30 # Events maximum age (day, recently-used section)
           commits_authoring: ${{ secrets.AUTHOR_EMAILS }} # Surnames or email addresses used to identify your commits
