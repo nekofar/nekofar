@@ -18,7 +18,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
-          repositories: 300
+          base_indepth: true
+          repositories: 500
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
