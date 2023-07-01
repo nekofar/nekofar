@@ -13,8 +13,7 @@ jobs:
     name: Header
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: header
         uses: nekofar/metrics@master
@@ -39,8 +38,7 @@ jobs:
     name: Activity & Community
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: activity & community
         uses: nekofar/metrics@master
@@ -64,8 +62,7 @@ jobs:
     name: Repositories
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: repositories
         uses: nekofar/metrics@master
@@ -91,8 +88,7 @@ jobs:
     name: WakaTime
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin wakatime
         uses: nekofar/metrics@master
@@ -123,8 +119,7 @@ jobs:
     name: Comment reactions
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin reactions
         uses: nekofar/metrics@master
@@ -154,8 +149,7 @@ jobs:
     name: Starred topics
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin topics
         uses: nekofar/metrics@master
@@ -182,8 +176,7 @@ jobs:
     name: Achievements
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin achievements
         uses: nekofar/metrics@master
@@ -236,8 +229,7 @@ jobs:
     name: Followup issues
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin followup
         uses: nekofar/metrics@master
@@ -264,8 +256,7 @@ jobs:
     name: Stackoverflow
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin stackoverflow
         uses: nekofar/metrics@master
@@ -293,8 +284,7 @@ jobs:
     name: Recent posts
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin posts
         uses: nekofar/metrics@master
@@ -321,8 +311,7 @@ jobs:
     name: Community Support
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin support
         uses: nekofar/metrics@master
@@ -347,8 +336,7 @@ jobs:
     name: Repositories Traffic
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin traffic
         uses: nekofar/metrics@master
@@ -373,8 +361,7 @@ jobs:
     name: Lines of codes changed
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin lines
         uses: nekofar/metrics@master
@@ -399,8 +386,7 @@ jobs:
     name: Coding habits
     runs-on: ubuntu-latest
     permissions:
-      contents: write    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+      contents: write
     steps:
       - name: plugin habits
         uses: nekofar/metrics@masterpermissions:
