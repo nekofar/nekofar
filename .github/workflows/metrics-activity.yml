@@ -1,11 +1,10 @@
 name: Metrics (Activity)
 
 on:
-  # Schedule updates (each hour)
+  # Schedule updates
   schedule: [{ cron: "0 2 * * *" }]
-  # Lines below let you run workflow manually and on each commit
+  # The line below let you run workflow manually
   workflow_dispatch:
-  push: { branches: ["master", "main"] }
 
 jobs:
   # 🗃️  Base content: Activity & Community
