@@ -389,9 +389,7 @@ jobs:
       contents: write
     steps:
       - name: plugin habits
-        uses: nekofar/metrics@masterpermissions:
-    contents: write          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update `${filename}`"
+        uses: nekofar/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
