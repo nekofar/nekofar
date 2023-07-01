@@ -1,0 +1,37 @@
+name: Metrics (Followup)
+
+on:
+  # Schedule updates (each hour)
+  schedule: [{ cron: "0 3 * * *" }]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: { branches: ["master", "main"] }
+
+jobs:
+  # 🎟️  Follow-up of issues and pull requests
+  plugin-followup:
+    name: Followup issues
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: plugin followup
+        uses: nekofar/metrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 500
+          repositories_batch: 100
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/metrics.plugin.followup.svg
+          use_prebuilt_image: yes
+          committer_message: |
+            chore(metrics): update `${filename}`
+            
+            [Skip GitHub Action]
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
+          plugin_followup_indepth: yes
+          plugin_followup_archived: yes
