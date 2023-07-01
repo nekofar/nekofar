@@ -5,7 +5,7 @@ on:
   # schedule: [{ cron: "30 20 * * 5" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: { branches: ["master", "main"] }
+  # push: { branches: ["master", "main"] }
 
 jobs:
   # 🗃️  Base content: Header
@@ -26,10 +26,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.base.header.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
 
 
   # 🗃️  Base content: Activity & Community
@@ -50,11 +49,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.base.activity-community.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
-
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
 
   # 🗃️  Base content: Repositories
   repositories:
@@ -73,10 +70,10 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.base.repositories.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
+
 
 
   # ⏰ WakaTime plugin
@@ -97,10 +94,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.wakatime.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }} # Required
           plugin_wakatime_days: 7 # Display last week stats
@@ -127,10 +123,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.reactions.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_reactions: yes
           plugin_reactions_limit: 200 # Compute reactions over last 200 issue comments
           plugin_reactions_limit_issues: 100 # Compute reactions over laste 100 issues/pull requests opened
@@ -156,10 +151,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.topics.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_topics: yes
           plugin_topics_sort: stars # Sort by most starred topics
           plugin_topics_mode: mastered # Display icons instead of labels
@@ -183,18 +177,18 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.achievements.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_achievements: yes
-          plugin_achievements_threshold: X # Display achievements with rank B or higher
+          plugin_achievements_threshold: C # Display achievements with rank B or higher
           plugin_achievements_secrets: yes # Display unlocked secrets achievements
           plugin_achievements_ignored: "" # Hide octonaut achievement
           plugin_achievements_limit: 0 # Display all unlocked achievement matching threshold and secrets params
           plugin_achievements_display: detailed # Use compact display
 
       - name: plugin achievements compact
+        if: false
         uses: nekofar/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -206,10 +200,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.achievements.compact.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_achievements: yes
           plugin_achievements_threshold: B # Display achievements with rank B or higher
           plugin_achievements_secrets: yes # Display unlocked secrets achievements
@@ -234,10 +227,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.followup.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_followup: yes
           plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
           plugin_followup_indepth: yes
@@ -260,10 +252,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.stackoverflow.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 184605 # Stackoverflow user id (required)
           plugin_stackoverflow_sections: "" # Display top answers and recent questions
@@ -287,10 +278,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.posts.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_posts: yes
           plugin_posts_source: dev.to # External source
           plugin_people_user: .github.user # Use same username as GitHub login
@@ -313,10 +303,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.support.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_support: yes
 
   # 🧮 Repositories traffic
@@ -337,10 +326,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.traffic.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_traffic: yes
 
   # 👨‍💻 Lines of code changed
@@ -361,10 +349,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.lines.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_lines: yes
 
   # 💡 Coding habits
@@ -385,10 +372,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.habits.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_habits: yes
           plugin_habits_from: 200 # Use 200 events to compute habits
           plugin_habits_days: 14 # Keep only events from last 14 days
@@ -414,10 +400,9 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.languages.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_languages: yes
           plugin_languages_ignored: ActionScript, AngelScript # Ignored languages
           plugin_languages_skipped: "nekofar/nekofar" # List of repositories to skip
