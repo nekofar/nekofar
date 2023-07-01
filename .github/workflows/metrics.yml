@@ -18,7 +18,9 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
-          repositories: 300
+          base_indepth: true
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -39,7 +41,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: activity, community
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -60,7 +63,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: repositories
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -81,7 +85,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -109,7 +114,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -136,7 +142,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -161,7 +168,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -183,7 +191,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -210,7 +219,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -233,7 +243,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -259,7 +270,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -283,7 +295,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -305,7 +318,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -327,7 +341,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -349,7 +364,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -376,7 +392,9 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          base_indepth: true
           repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -396,7 +414,8 @@ jobs:
           plugin_languages_sections: most-used, recently-used # Display most used and recently used languages stats
           plugin_languages_details: percentage # Additionally display total bytes size and percentage
           plugin_languages_indepth: yes # Get indepth stats (see documentation before enabling)
-          plugin_languages_analysis_timeout: 30 # Indepth mode - Analysis timeout
+          plugin_languages_analysis_timeout: 60 # Indepth mode - Analysis timeout
+          plugin_languages_analysis_timeout_repositories: 15
           plugin_languages_categories: programming # Display only languages that match these categories in most-used section
           plugin_languages_recent_categories: markup, programming # Display only languages that match these categories in recently-used section
           plugin_languages_recent_load: 1000 # Load up to 1000 events to compute recently used stats
