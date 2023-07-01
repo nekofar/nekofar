@@ -20,6 +20,7 @@ jobs:
           base: header
           base_indepth: true
           repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -40,7 +41,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: activity, community
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -61,7 +63,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: repositories
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -82,7 +85,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -110,7 +114,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -137,7 +142,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -162,7 +168,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -184,7 +191,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -211,7 +219,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -234,7 +243,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -260,7 +270,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -284,7 +295,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -306,7 +318,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -328,7 +341,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -350,7 +364,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
@@ -378,6 +393,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           config_timezone: Asia/Tehran
