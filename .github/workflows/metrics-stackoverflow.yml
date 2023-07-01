@@ -1,0 +1,38 @@
+name: Metrics (Stackoverflow)
+
+on:
+  # Schedule updates (each hour)
+  schedule: [{ cron: "0 8 * * *" }]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: { branches: ["master", "main"] }
+
+jobs:
+  # 🗨️  Stackoverflow plugin
+  plugin-stackoverflow:
+    name: Stackoverflow
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: plugin stackoverflow
+        uses: nekofar/metrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 500
+          repositories_batch: 100
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/metrics.plugin.stackoverflow.svg
+          use_prebuilt_image: yes
+          committer_message: |
+            chore(metrics): update `${filename}`
+            
+            [Skip GitHub Action]
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 184605 # Stackoverflow user id (required)
+          plugin_stackoverflow_sections: "" # Display top answers and recent questions
+          plugin_stackoverflow_limit: 2 # Display 2 entries per section
+          plugin_stackoverflow_lines: 4 # Display 4 lines per entry

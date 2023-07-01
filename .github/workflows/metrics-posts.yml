@@ -1,0 +1,36 @@
+name: Metrics (Posts)
+
+on:
+  # Schedule updates (each hour)
+  schedule: [{ cron: "0 6 * * *" }]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: { branches: ["master", "main"] }
+
+jobs:
+  # ✒️  Recent posts
+  plugin-posts:
+    name: Recent posts
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: plugin posts
+        uses: nekofar/metrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          repositories: 500
+          repositories_batch: 100
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          config_timezone: Asia/Tehran
+          filename: assets/metrics.plugin.posts.svg
+          use_prebuilt_image: yes
+          committer_message: |
+            chore(metrics): update `${filename}`
+            
+            [Skip GitHub Action]
+          plugin_posts: yes
+          plugin_posts_source: dev.to # External source
+          plugin_people_user: .github.user # Use same username as GitHub login
