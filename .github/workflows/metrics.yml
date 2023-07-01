@@ -56,6 +56,7 @@ jobs:
             [Skip GitHub Action]
 
 
+
   # 🗃️  Base content: Repositories
   repositories:
     name: Repositories
@@ -77,6 +78,7 @@ jobs:
             chore(metrics): update `${filename}`
             
             [Skip GitHub Action]
+
 
 
   # ⏰ WakaTime plugin
@@ -195,6 +197,7 @@ jobs:
           plugin_achievements_display: detailed # Use compact display
 
       - name: plugin achievements compact
+        if: false
         uses: nekofar/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
