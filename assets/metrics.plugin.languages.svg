@@ -80,14 +80,14 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 289kb of code in 479 edited files across 475 commits over last 3 days</small>
+                <small>estimation from 288kb of code in 475 edited files across 469 commits over last 3 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="419.85937876234044" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="419.85937876234044" y="0" width="40.14062123765952" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="434.8969920686387" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="434.8969920686387" y="0" width="25.1030079313613" height="8" fill="#89e051"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -99,7 +99,7 @@
                                 Kotlin
                             </div>
                             <small>
-                                <div>91.27%</div>
+                                <div>94.54%</div>
                             </small>
                         </div>
                     </section>
@@ -112,7 +112,7 @@
                                 Shell
                             </div>
                             <small>
-                                <div>8.73%</div>
+                                <div>5.46%</div>
                             </small>
                         </div>
                     </section>
