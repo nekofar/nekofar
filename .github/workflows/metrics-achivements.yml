@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: plugin achievements
         uses: nekofar/metrics@master
@@ -27,10 +28,8 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.achievements.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_achievements: yes
           plugin_achievements_threshold: C # Display achievements with rank B or higher
           plugin_achievements_secrets: yes # Display unlocked secrets achievements

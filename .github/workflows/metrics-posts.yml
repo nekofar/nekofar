@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: plugin posts
         uses: nekofar/metrics@master
@@ -26,10 +27,8 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.posts.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_posts: yes
           plugin_posts_source: dev.to # External source
           plugin_people_user: .github.user # Use same username as GitHub login

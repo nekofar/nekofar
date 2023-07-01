@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: plugin languages
         uses: nekofar/metrics@master
@@ -27,10 +28,8 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.languages.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_languages: yes
           plugin_languages_ignored: ActionScript, AngelScript # Ignored languages
           plugin_languages_skipped: "nekofar/nekofar" # List of repositories to skip

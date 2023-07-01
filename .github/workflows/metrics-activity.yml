@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: activity & community
         uses: nekofar/metrics@master
@@ -27,7 +28,5 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.base.activity-community.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"

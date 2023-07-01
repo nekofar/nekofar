@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: plugin stackoverflow
         uses: nekofar/metrics@master
@@ -26,10 +27,8 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.stackoverflow.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 184605 # Stackoverflow user id (required)
           plugin_stackoverflow_sections: "" # Display top answers and recent questions

@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: plugin followup
         uses: nekofar/metrics@master
@@ -26,10 +27,8 @@ jobs:
           config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.followup.svg
           use_prebuilt_image: yes
-          committer_message: |
-            chore(metrics): update `${filename}`
-            
-            [Skip GitHub Action]
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_followup: yes
           plugin_followup_sections: repositories, user # Display overall status of issues/pull requests created on user's repositories and created by user
           plugin_followup_indepth: yes
