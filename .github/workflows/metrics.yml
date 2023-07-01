@@ -41,6 +41,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: activity, community
+          base_indepth: yes
           repositories: 500
           repositories_batch: 100
           repositories_forks: yes
