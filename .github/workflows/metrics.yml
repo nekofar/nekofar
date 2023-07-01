@@ -392,6 +392,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          base_indepth: true
           repositories: 500
           repositories_batch: 100
           repositories_forks: yes
