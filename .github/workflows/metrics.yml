@@ -31,6 +31,7 @@ jobs:
             
             [Skip GitHub Action]
 
+
   # 🗃️  Base content: Activity & Community
   activity-community:
     name: Activity & Community
@@ -54,6 +55,7 @@ jobs:
             
             [Skip GitHub Action]
 
+
   # 🗃️  Base content: Repositories
   repositories:
     name: Repositories
@@ -76,8 +78,10 @@ jobs:
             
             [Skip GitHub Action]
 
+
   # ⏰ WakaTime plugin
   plugin-wakatime:
+    if: false
     name: WakaTime
     runs-on: ubuntu-latest
     steps:
@@ -107,6 +111,7 @@ jobs:
 
   # 🎭 Comment reactions
   plugin-reactions:
+    if: false
     name: Comment reactions
     runs-on: ubuntu-latest
     steps:
@@ -135,6 +140,7 @@ jobs:
 
   # 📌 Starred topics
   plugin-topics:
+    if: false
     name: Starred topics
     runs-on: ubuntu-latest
     steps:
@@ -169,6 +175,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          base_indepth: yes
           repositories: 500
           repositories_batch: 100
           repositories_forks: yes
@@ -290,6 +297,7 @@ jobs:
 
   # 💭 GitHub Community Support
   plugin-support:
+    if: false
     name: Community Support
     runs-on: ubuntu-latest
     steps:
@@ -313,6 +321,7 @@ jobs:
 
   # 🧮 Repositories traffic
   plugin-traffic:
+    if: false
     name: Repositories Traffic
     runs-on: ubuntu-latest
     steps:
@@ -336,6 +345,7 @@ jobs:
 
   # 👨‍💻 Lines of code changed
   plugin-lines:
+    if: false
     name: Lines of codes changed
     runs-on: ubuntu-latest
     steps:
@@ -359,6 +369,7 @@ jobs:
 
   # 💡 Coding habits
   plugin-habits:
+    if: false
     name: Coding habits
     runs-on: ubuntu-latest
     steps:
