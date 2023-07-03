@@ -2,7 +2,7 @@ name: Metrics (Achievements)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 1 * * *" }]
+  schedule: [{ cron: "0 0 * * *" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 

@@ -2,7 +2,7 @@ name: Metrics (Languages)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 5 * * *" }]
+  schedule: [{ cron: "0 8 * * *" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 
