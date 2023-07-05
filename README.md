@@ -19,7 +19,6 @@ Sometimes I give consultation to the startups or cooperate with them. In recent 
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.activity-community.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.base.repositories.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.stackoverflow.svg">
-        <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.posts.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.languages.svg">
         <img src="https://github.com/nekofar/nekofar/blob/master/assets/metrics.plugin.followup.svg">
       </td>
