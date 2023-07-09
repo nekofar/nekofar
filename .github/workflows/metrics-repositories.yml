@@ -2,7 +2,7 @@ name: Metrics (Repositories)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 12 * * *" }]
+  schedule: [{ cron: "0 0 * * 6" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 

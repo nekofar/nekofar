@@ -2,7 +2,7 @@ name: Metrics (Stackoverflow)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 14 * * *" }]
+  schedule: [{ cron: "0 12 * * 6" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 

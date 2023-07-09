@@ -2,7 +2,7 @@ name: Metrics (Header)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 6 * * *" }]
+  schedule: [{ cron: "0 0 * * 3" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 

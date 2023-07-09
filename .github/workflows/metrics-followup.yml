@@ -2,7 +2,7 @@ name: Metrics (Followup)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 4 * * *" }]
+  schedule: [{ cron: "0 0 * * 2" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 

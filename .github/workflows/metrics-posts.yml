@@ -2,7 +2,7 @@ name: Metrics (Posts)
 
 on:
   # Schedule updates
-  schedule: [{ cron: "0 10 * * *" }]
+  schedule: [{ cron: "0 0 * * 5" }]
   # The line below let you run workflow manually
   workflow_dispatch:
 
