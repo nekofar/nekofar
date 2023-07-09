@@ -24,7 +24,6 @@ jobs:
           repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
-          config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.stackoverflow.svg
           use_prebuilt_image: yes
           output_action: pull-request
