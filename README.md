@@ -5,21 +5,13 @@
 
 ### Greetings! 👋
 
-I'm Milad, a self-taught Software Developer with a burning passion for crypto and web3 technologies. 💻🚀
+Hello! My name is Milad, and I am a self-taught software developer who is passionate about crypto and web3 technologies. With a background in the software industry, I am currently focused on consulting, contracting, and freelancing in the exciting world of cryptocurrencies and web3.
 
-With an extensive background in the software industry, I'm currently focused on consulting, contracting, and freelancing, diving headfirst into the thrilling world of cryptocurrencies and web3. 🔍💡
+Throughout my journey as a developer, I have worked with various platforms, honing my skills in mobile and web development. However, my true passion lies in exploring the innovative and decentralized realm of crypto and web3 applications. I love crafting smart contracts, creating decentralized applications (DApps), and diving deep into the world of blockchain.
 
-Throughout my journey as a developer, I've had the opportunity to work with various platforms, honing my skills in mobile and web development. However, my heart truly belongs to exploring the innovative and decentralized realm of crypto and web3 applications. 🌐🔗
+My main goal is to empower startups and businesses in the crypto space by providing valuable insights and technical expertise. If you're interested in collaborating on a project or need some blockchain magic infused into your work, let's connect and explore the infinite possibilities of collaboration. Together, we can shape the future of decentralized technology!
 
-Whether it's crafting ingenious smart contracts, conjuring up mind-blowing decentralized applications (DApps), or diving deep into blockchain wizardry, I'm always eager to learn and experiment with groundbreaking possibilities. 📚💡
-
-My unwavering dedication lies in empowering startups and businesses in the crypto space, providing valuable insights and technical expertise to navigate this transformative industry. 🚀💼
-
-If you share the same electric enthusiasm for crypto and web3 or need to infuse some blockchain magic into your projects, let's connect and explore the infinite possibilities of collaboration. Together, we'll shape the future of decentralized technology! 🤝🌟
-
-Looking forward to partnering with you,
-Milad
-
+---
 
 <table cellspacing="0" cellpadding="0">
   <tbody>
