@@ -1,5 +1,5 @@
 
-[![Twitter Badge](https://img.shields.io/badge/Twitter-Profile-informational?style=flat&logo=twitter&logoColor=white&color=1CA2F1)](https://twitter.com/nekofar)
+[![X (formerly Twitter) Follow](https://img.shields.io/badge/follow-%40nekofar-ffffff?logo=x&style=flat)](https://x.com/nekofar)
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/nekofar/)
 [![Resume Badge](https://img.shields.io/badge/CV-Resume-informational?style=flat&logo=book&logoColor=white&color=important)](https://github.com/nekofar/resume)
 
