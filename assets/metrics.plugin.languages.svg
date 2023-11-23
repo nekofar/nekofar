@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="262" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="224" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:#777}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3,svg{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}#metrics-end,.fill-width{width:100%}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details,.field.language.details small{display:flex;justify-content:space-between}.field.language.details small{color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:#777}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3,svg{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}#metrics-end,.fill-width{width:100%}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details,.field.language.details small{display:flex;justify-content:space-between}.field.language.details small{color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .code,code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code{margin:0 4px -3px}.activity .details{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}code{display:inline-block}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -16,31 +16,31 @@
             </section>
             <section class="column">
                 <h3 class="field">Most used languages</h3>
-                <small>estimation from 5.55mb of code in 5225 edited files across 3196 commits</small>
+                <small>estimation from 5.94mb of code in 5856 edited files across 3639 commits</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="200.59626685860496" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="200.59626685860496" y="0" width="193.20251684946155" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="393.7987837080665" y="0" width="50.94937773662028" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="444.7481614446868" y="0" width="14.543890524948322" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="459.2920519696351" y="0" width="0.2994647086619472" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="459.59151667829707" y="0" width="0.263125170981621" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="459.85464184927866" y="0" width="0.14535815072130473" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="198.35978835978835" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="198.35978835978835" y="0" width="188.32287997941492" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="386.68266833920325" y="0" width="57.24940094241006" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="443.93206928161334" y="0" width="15.248629002428393" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="459.18069828404174" y="0" width="0.3039245643095694" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="459.48462284835125" y="0" width="0.274333531679023" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="459.75895638003027" y="0" width="0.24104361996965848" height="8" fill="#ededed"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 TypeScript
                             </div>
                             <small>
-                                <div>43.61%</div>
+                                <div>43.12%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -51,18 +51,7 @@
                                 Kotlin
                             </div>
                             <small>
-                                <div>11.08%</div>
-                            </small>
-                        </div>
-                        <div class="field language details">
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                                </svg>
-                                Ruby
-                            </div>
-                            <small>
-                                <div>0.07%</div>
+                                <div>12.45%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -73,31 +62,7 @@
                                 Shell
                             </div>
                             <small>
-                                <div>0.03%</div>
-                            </small>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="field language details">
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                                </svg>
-                                Rust
-                            </div>
-                            <small>
-                                <div>42%</div>
-                            </small>
-                        </div>
-                        <div class="field language details">
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                                </svg>
-                                JavaScript
-                            </div>
-                            <small>
-                                <div>3.16%</div>
+                                <div>0.07%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -108,34 +73,7 @@
                                 Dockerfile
                             </div>
                             <small>
-                                <div>0.06%</div>
-                            </small>
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <section class="column">
-                <h3 class="field">Recently used languages</h3>
-                <small>estimation from 410kb of code in 417 edited files across 376 commits over last 3 days</small>
-                <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
-                    <mask id="languages-bar">
-                        <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
-                    </mask>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="449.92345856866854" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="449.92345856866854" y="0" width="10.076541431331497" height="8" fill="#ededed"/>
-                </svg>
-                <div class="row fill-width">
-                    <section>
-                        <div class="field language details">
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                                </svg>
-                                TypeScript
-                            </div>
-                            <small>
-                                <div>97.81%</div>
+                                <div>0.05%</div>
                             </small>
                         </div>
                     </section>
@@ -148,9 +86,43 @@
                                 Rust
                             </div>
                             <small>
-                                <div>2.19%</div>
+                                <div>40.94%</div>
                             </small>
                         </div>
+                        <div class="field language details">
+                            <div class="field">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                </svg>
+                                JavaScript
+                            </div>
+                            <small>
+                                <div>3.31%</div>
+                            </small>
+                        </div>
+                        <div class="field language details">
+                            <div class="field">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                </svg>
+                                Ruby
+                            </div>
+                            <small>
+                                <div>0.06%</div>
+                            </small>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="column">
+                <h3 class="field">Recently used languages</h3>
+                <small>No recent push activity found
+                
+                  over last 2 days</small>
+                <div class="row fill-width">
+                    <section>
+                    </section>
+                    <section>
                     </section>
                 </div>
             </section>
