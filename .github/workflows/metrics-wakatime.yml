@@ -33,4 +33,4 @@ jobs:
           plugin_wakatime_url: https://wakatime.com # Wakatime url endpoint
           plugin_wakatime_user: .user.login # User
           plugin_wakatime_languages_other: yes
-          plugin_wakatime_languages_ignored: markdown, json, yaml, text, xml, sh, properties, tsconfig, mdx, locale, shell script, gitignore file, gettext catalog, solidity file # Ignored languages
+          plugin_wakatime_languages_ignored: markdown, json, yaml, text, xml, sh, properties, tsconfig, mdx, locale, shell script, gitignore file, gettext catalog, solidity file, toml # Ignored languages
