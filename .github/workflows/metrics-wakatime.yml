@@ -17,17 +17,18 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          repositories: 300
+          repositories: 500
+          repositories_batch: 100
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
-          config_timezone: Asia/Tehran
           filename: assets/metrics.plugin.wakatime.svg
           use_prebuilt_image: yes
-          committer_message: "chore(metrics): update ${filename} - [Skip GitHub Action]"
+          output_action: pull-request
+          committer_message: "chore(metrics): update `${filename}`"
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }} # Required
-          plugin_wakatime_days: 7 # Display last week stats
+          plugin_wakatime_days: 365 # Display last week stats
           plugin_wakatime_sections: time, languages, os, editors-graphs, languages-graphs # Display time and projects sections, along with projects graphs
-          plugin_wakatime_limit: 5 # Show 5 entries per graph
+          plugin_wakatime_limit: 10 # Show 5 entries per graph
           plugin_wakatime_url: https://wakatime.com # Wakatime url endpoint
           plugin_wakatime_user: .user.login # User
