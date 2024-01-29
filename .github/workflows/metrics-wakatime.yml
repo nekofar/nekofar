@@ -32,4 +32,4 @@ jobs:
           plugin_wakatime_limit: 10 # Show 5 entries per graph
           plugin_wakatime_url: https://wakatime.com # Wakatime url endpoint
           plugin_wakatime_user: .user.login # User
-          plugin_wakatime_languages_ignored: shell, markdown, json, yaml, text, xml # Ignored languages
+          plugin_wakatime_languages_ignored: shell, markdown, json, yaml, text, xml, sh, properties, tsconfig, mdx # Ignored languages
