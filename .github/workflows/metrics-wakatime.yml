@@ -28,9 +28,9 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }} # Required
           plugin_wakatime_days: 30 # Display last week stats
-          plugin_wakatime_sections: time, languages, os, editors, languages-graphs # Display time and projects sections, along with projects graphs
+          plugin_wakatime_sections: time, languages, editors, languages-graphs # Display time and projects sections, along with projects graphs
           plugin_wakatime_limit: 5 # Show 5 entries per graph
           plugin_wakatime_url: https://wakatime.com # Wakatime url endpoint
           plugin_wakatime_user: .user.login # User
           plugin_wakatime_languages_other: yes
-          plugin_wakatime_languages_ignored: markdown, json, yaml, text, xml, sh, properties, tsconfig, mdx, locale, shell script, gitignore file, gettext catalog # Ignored languages
+          plugin_wakatime_languages_ignored: markdown, json, yaml, text, xml, sh, properties, tsconfig, mdx, locale, shell script, gitignore file, gettext catalog, solidity file # Ignored languages
