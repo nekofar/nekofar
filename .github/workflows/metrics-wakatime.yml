@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: plugin wakatime
-        uses: lowlighter/metrics@v3.34
+        uses: nekofar/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
