@@ -30,11 +30,11 @@ jobs:
           output_action: pull-request
           committer_message: "chore(metrics): update `${filename}`"
           plugin_languages: yes
-          plugin_languages_ignored: yaml, toml, json # Ignored languages
+          plugin_languages_ignored: yaml, toml, json, text, SVG, gradle # Ignored languages
           plugin_languages_skipped: "nekofar/nekofar" # List of repositories to skip
           plugin_languages_limit: 8 # Display up to 8 languages
           plugin_languages_threshold: 0% # Hides all languages less than 0%
-          plugin_languages_other: yes # Group unknown, ignored and over-limit languages into "Other" category
+          plugin_languages_other: no # Group unknown, ignored and over-limit languages into "Other" category
           plugin_languages_colors: rust:#dea584 # Make most used languages orange and JavaScript red
           plugin_languages_aliases: RenderScript:Rust, TSX:TypeScript, JSX:JavaScript # Customize languages names with aliases
           plugin_languages_sections: most-used, recently-used # Display most used and recently used languages stats
